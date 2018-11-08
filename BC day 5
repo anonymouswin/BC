@@ -1,0 +1,395 @@
+archit@archit-HP-ProBook-440-G3:~$ bitcoin-cli getnewaddress -testnet
+bitcoin-cli: command not found
+archit@archit-HP-ProBook-440-G3:~$ sudo docker exec -it bitcoin /bin/bash
+[sudo] password for archit: 
+Error: No such container: bitcoin
+archit@archit-HP-ProBook-440-G3:~$ sudo docker exec -it bitcoind /bin/bash
+root@58abb63173d2:/# bitcoin-cli getnewaddress -testnet
+mrD7dQ5qovj4qJZdAokkXyiBBeYBeMGdHj
+root@58abb63173d2:/# bitcoin-cli getnewaddress -testnet^c
+mkDFcHfgmehTsfBLSsR4rvxQbAaZEtp71p
+root@58abb63173d2:/# bitcoin-cli getnewaddress -testnet
+mmGfFx2GPL3SPKohCSGnqAxXmW8KzA8a3B
+root@58abb63173d2:/# bitcoin-cli listunspent 1
+[
+  {
+    "txid": "7b19bef08fff7ed28d1e4b95b46034fe88ddb759ff4abb3eb91006b555ad9736",
+    "vout": 1,
+    "address": "n4obfGptGnF1M74NketuoUzbnAe8JjPCcD",
+    "scriptPubKey": "76a914ff70bd678da9e98c00f67a87156a00a9ec77ea4d88ac",
+    "amount": 27.99991680,
+    "confirmations": 2,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "aff75ae1e57e6c0622f4169b0c41958f3b0450385047db0e244b4f439a01c036",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 105,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "dae7a329b4be48b878193328cc358ea76d6dcb30ea2903f736f3b40822c6948d",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 103,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "092f3d238128844c6ad6707c83621b2d6aa7c3515bf64863ce89ff8a40b78b99",
+    "vout": 0,
+    "address": "mxGZtjcVS1xSeSaR1WgrnnKCNCSJxu2fhG",
+    "account": "",
+    "scriptPubKey": "76a914b7c19d54cb08d8f2819aba36a0ee28281774ae6288ac",
+    "amount": 5.00000000,
+    "confirmations": 1,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "bb7d58bc317d19fc6520f73f582f1134a7fffab7196852e65579ca99c37f59b5",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 102,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "7146be6ef686c2e5f6f4e6b1dab48b28a4401fcaffabfd75f52d43ea06c63fc1",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "a91dfeb043a1ec33bd2e76a77491ce9fb89cec12665f980315ae170f0dbb86f6",
+    "vout": 0,
+    "address": "mw2xQKMsJrDagYTRqukbfBZ2mq42ZfTZ7P",
+    "account": "",
+    "scriptPubKey": "76a914aa3674ac57f8415f25a16ab983e39ea8a9df433288ac",
+    "amount": 11.00000000,
+    "confirmations": 5,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "14978d1b093fae56312785e929f46f1684d05395bd5e15e50a4f6aad5dc720fe",
+    "vout": 0,
+    "address": "mw4ghv45kb2XJ6eArprqSUuHSnPpQwhWwQ",
+    "account": "",
+    "scriptPubKey": "76a914aa8a2f510a9bf0a32c044d384680b0c2f54d60a988ac",
+    "amount": 0.01000000,
+    "confirmations": 3,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }
+]
+root@58abb63173d2:/# bitcoin-cli listunspent
+[
+  {
+    "txid": "7b19bef08fff7ed28d1e4b95b46034fe88ddb759ff4abb3eb91006b555ad9736",
+    "vout": 1,
+    "address": "n4obfGptGnF1M74NketuoUzbnAe8JjPCcD",
+    "scriptPubKey": "76a914ff70bd678da9e98c00f67a87156a00a9ec77ea4d88ac",
+    "amount": 27.99991680,
+    "confirmations": 2,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "aff75ae1e57e6c0622f4169b0c41958f3b0450385047db0e244b4f439a01c036",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 105,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "dae7a329b4be48b878193328cc358ea76d6dcb30ea2903f736f3b40822c6948d",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 103,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "092f3d238128844c6ad6707c83621b2d6aa7c3515bf64863ce89ff8a40b78b99",
+    "vout": 0,
+    "address": "mxGZtjcVS1xSeSaR1WgrnnKCNCSJxu2fhG",
+    "account": "",
+    "scriptPubKey": "76a914b7c19d54cb08d8f2819aba36a0ee28281774ae6288ac",
+    "amount": 5.00000000,
+    "confirmations": 1,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "bb7d58bc317d19fc6520f73f582f1134a7fffab7196852e65579ca99c37f59b5",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 102,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "7146be6ef686c2e5f6f4e6b1dab48b28a4401fcaffabfd75f52d43ea06c63fc1",
+    "vout": 0,
+    "address": "mgtY9ygsGeLkBEsCJERsk67eiLJKYVUpwv",
+    "scriptPubKey": "21028f5c4d86e72a3d6d9f34ef08749d4b1dbb5525b7cfd6641c6944919ef5caf574ac",
+    "amount": 50.00000000,
+    "confirmations": 101,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "a91dfeb043a1ec33bd2e76a77491ce9fb89cec12665f980315ae170f0dbb86f6",
+    "vout": 0,
+    "address": "mw2xQKMsJrDagYTRqukbfBZ2mq42ZfTZ7P",
+    "account": "",
+    "scriptPubKey": "76a914aa3674ac57f8415f25a16ab983e39ea8a9df433288ac",
+    "amount": 11.00000000,
+    "confirmations": 5,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }, 
+  {
+    "txid": "14978d1b093fae56312785e929f46f1684d05395bd5e15e50a4f6aad5dc720fe",
+    "vout": 0,
+    "address": "mw4ghv45kb2XJ6eArprqSUuHSnPpQwhWwQ",
+    "account": "",
+    "scriptPubKey": "76a914aa8a2f510a9bf0a32c044d384680b0c2f54d60a988ac",
+    "amount": 0.01000000,
+    "confirmations": 3,
+    "spendable": true,
+    "solvable": true,
+    "safe": true
+  }
+]
+root@58abb63173d2:/# UTXO_ID=7146be6ef686c2e5f6f4e6b1dab48b28a4401fcaffabfd75f52d43ea06c63fc1
+root@58abb63173d2:/# bitcoin-cli getnewaddressmjQT4W3YnmGTk7qRme5wTVeYkTPDwe1LG7
+root@58abb63173d2:/# ADDR4=mjQT4W3YnmGTk7qRme5wTVeYkTPDwe1LG7
+root@58abb63173d2:/# bitcoin-cli createrawtransaction '''[{ "txid" : "'$UTXO_ID'", "vout" : 0 }]''' '{"'$ADDR4'": 5}'
+0200000001c13fc606ea432df575fdabffca1f40a4288bb4dab1e6f4f6e5c286f66ebe46710000000000ffffffff010065cd1d000000001976a9142aa59ab578a876f84f778e91c0daaa460c18b5d888ac00000000
+root@58abb63173d2:/# bitcoin-cli getblockcount106
+root@58abb63173d2:/# bitcoin-cli createrawtransaction '''[{ "txid" : "'$UTXO_ID'", "vout" : 0 }]''' '{"'$ADDR4'": 5}' 107
+0200000001c13fc606ea432df575fdabffca1f40a4288bb4dab1e6f4f6e5c286f66ebe46710000000000feffffff010065cd1d000000001976a9142aa59ab578a876f84f778e91c0daaa460c18b5d888ac6b000000
+root@58abb63173d2:/# RAW_TX=0200000001c13fc606ea432df575fdabffca1f40a4288bb4dab1e6f4f6e5c286f66ebe46710000000000feffffff010065cd1d000000001976a9142aa59ab578a876f84f778e91c0daaa460c18b5d888ac6b000000
+root@58abb63173d2:/# bitcoin-cli signrawtransaction $RAW_TX
+{
+  "hex": "0200000001c13fc606ea432df575fdabffca1f40a4288bb4dab1e6f4f6e5c286f66ebe4671000000004847304402204764cd0917c21c4fcedaa6823e7af3ab8f410393e6c8db039740301e4889c817022047291a8078484fb1c519ff5e8a61e7f5a5409848cc4b135be88501be7db2279001feffffff010065cd1d000000001976a9142aa59ab578a876f84f778e91c0daaa460c18b5d888ac6b000000",
+  "complete": true
+}
+root@58abb63173d2:/# SIGNED_RAW_TX=0200000001c13fc606ea432df575fdabffca1f40a4288bb4dab1e6f4f6e5c286f66ebe4671000000004847304402204764cd0917c21c4fcedaa6823e7af3ab8f410393e6c8db039740301e4889c817022047291a8078484fb1c519ff5e8a61e7f5a5409848cc4b135be88501be7db2279001feffffff010065cd1d000000001976a9142aa59ab578a876f84f778e91c0daaa460c18b5d888ac6b000000
+root@58abb63173d2:/# bitcoin-cli sendrawtransaction $SIGNED_RAW_TX
+error code: -26
+error message:
+64: non-final
+root@58abb63173d2:/# exit
+exit
+archit@archit-HP-ProBook-440-G3:~$ docker stop bitcoind
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/containers/bitcoind/stop: dial unix /var/run/docker.sock: connect: permission denied
+archit@archit-HP-ProBook-440-G3:~$ sudo docker stop bitcoind
+[sudo] password for archit: 
+bitcoind
+archit@archit-HP-ProBook-440-G3:~$ sudo docker start bitcoind
+bitcoind
+archit@archit-HP-ProBook-440-G3:~$ sudo docker exec -it bitcoind /bin/bash
+root@58abb63173d2:/# bitcoin-cli getbalance                0.00000000
+root@58abb63173d2:/# bitcoin-cli getblockchaininfo
+{
+  "chain": "test",
+  "blocks": 0,
+  "headers": 0,
+  "bestblockhash": "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
+  "difficulty": 1,
+  "mediantime": 1296688602,
+  "verificationprogress": 4.980600325155006e-08,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000100010001",
+  "pruned": false,
+  "softforks": [
+    {
+      "id": "bip34",
+      "version": 2,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip66",
+      "version": 3,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip65",
+      "version": 4,
+      "reject": {
+        "status": false
+      }
+    }
+  ],
+  "bip9_softforks": {
+    "csv": {
+      "status": "defined",
+      "startTime": 1456790400,
+      "timeout": 1493596800,
+      "since": 0
+    },
+    "segwit": {
+      "status": "defined",
+      "startTime": 1462060800,
+      "timeout": 1493596800,
+      "since": 0
+    }
+  }
+}
+root@58abb63173d2:/# bitcoin-cli getblockchaininfo
+{
+  "chain": "test",
+  "blocks": 0,
+  "headers": 2000,
+  "bestblockhash": "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
+  "difficulty": 1,
+  "mediantime": 1296688602,
+  "verificationprogress": 4.980599394915945e-08,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000100010001",
+  "pruned": false,
+  "softforks": [
+    {
+      "id": "bip34",
+      "version": 2,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip66",
+      "version": 3,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip65",
+      "version": 4,
+      "reject": {
+        "status": false
+      }
+    }
+  ],
+  "bip9_softforks": {
+    "csv": {
+      "status": "defined",
+      "startTime": 1456790400,
+      "timeout": 1493596800,
+      "since": 0
+    },
+    "segwit": {
+      "status": "defined",
+      "startTime": 1462060800,
+      "timeout": 1493596800,
+      "since": 0
+    }
+  }
+}
+root@58abb63173d2:/# .bitcoin# cat bitcoin.conf
+bash: .bitcoin#: command not found
+root@58abb63173d2:/# ~/ .bitcoin# cat bitcoin.conf
+bash: /root/: Is a directory
+root@58abb63173d2:/# bitcoin-cli getblockchaininfo
+{
+  "chain": "test",
+  "blocks": 0,
+  "headers": 62000,
+  "bestblockhash": "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
+  "difficulty": 1,
+  "mediantime": 1296688602,
+  "verificationprogress": 4.980588343702482e-08,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000100010001",
+  "pruned": false,
+  "softforks": [
+    {
+      "id": "bip34",
+      "version": 2,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip66",
+      "version": 3,
+      "reject": {
+        "status": false
+      }
+    }, 
+    {
+      "id": "bip65",
+      "version": 4,
+      "reject": {
+        "status": false
+      }
+    }
+  ],
+  "bip9_softforks": {
+    "csv": {
+      "status": "defined",
+      "startTime": 1456790400,
+      "timeout": 1493596800,
+      "since": 0
+    },
+    "segwit": {
+      "status": "defined",
+      "startTime": 1462060800,
+      "timeout": 1493596800,
+      "since": 0
+    }
+  }
+}
+root@58abb63173d2:/# sudo docker stop bitcoind
+bash: sudo: command not found
+root@58abb63173d2:/# sudo docker start bitcoind
+bash: sudo: command not found
+root@58abb63173d2:/# docker -exec it 
+
+
+
+
+
+
+
+
+
